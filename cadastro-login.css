@@ -1,0 +1,302 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+:root{
+   --azul:#3c67a7;
+
+}
+*{
+  box-sizing: border-box;
+  margin: auto;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+    background-image: linear-gradient(to right, #a5b7d1, #395580 );
+    color: #313131;
+}
+.geral{
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    margin: 80px auto;
+    box-shadow: 2px 2px 20px 5px rgba(37, 37, 37, 0.226);
+
+}
+section {
+    width: 100px;
+    height: 82vh;
+    width: 50%;
+}
+.image{
+    background:     linear-gradient(rgba(0, 0, 0, 0.233), rgba(0, 0, 0, 0.253)),
+    url(midia/fundo.png);
+}
+.image h1{
+    font-family: 'Krona One', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 4em;
+    margin: 0;
+    padding: 25% 0px 0px 6%;
+}
+.image h2{
+    font-family: 'Krona One', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 3em;
+    margin: 0;
+    padding: 1% 0px 0px 6%;
+}
+.image p{
+    color: white;
+    font-size: .95em;
+    font-weight: 200;
+    margin: 0;
+    padding: 2% 0px 0px 6%;
+    width: 90%;
+}
+
+/*Formulário*/
+
+.form{
+    background-color: #f8f6f0;
+    
+}
+form h1{
+    font-size: 2.5em;
+    font-weight: 500;
+    text-align: center;
+    color: var(--azul);
+    margin-top: 120px;
+    margin-bottom: 150px;
+}
+.div-geral{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: auto;
+    margin-bottom: 25px;
+    width: 60%;
+}
+.div-geral input{
+    margin: auto;
+    width: 100%;
+    outline: 0;
+    border: none;
+    background-color: #b2c3da62;
+    height: 2.6vh;
+    margin-top: 8px;
+    border-radius: 6px;
+    padding: 15px 8px;
+    font-size: .9em;
+}
+.div-geral label{
+    text-align: left;
+    margin: 0;
+}
+
+
+.submit{
+    padding: 6px 55px;
+    font-size: .9em;
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+    background-color: var(--azul);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    letter-spacing: .8px;
+}
+.submit:hover{
+    background-color: #395580;
+}
+
+
+.ocultar{
+  display: flex;
+
+}
+
+.ocultar p{
+    margin: 0px 10px;
+    font-size: .9em;
+    
+   
+}
+.checkbox {
+    --border-default: #bbbbc1;
+    --border-hover: #9898a3;
+    --active: #3c67a7;
+    --active-tick: #ffffff;
+    display: block;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    margin: 0 0 0 205px;
+    
+  }
+  
+  .checkbox svg {
+    display: block;
+  }
+  
+  .checkbox input {
+    display: flex;
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 36%/36%;
+    box-shadow: inset 0 0 0 1.5px var(--border, var(--border-default));
+    background: var(--background, transparent);
+    transition: 0.25s linear;
+    flex-grow: 1;
+  }
+  
+  .checkbox input + svg {
+    width: 21px;
+    height: 18px;
+    left: 0;
+    top: 0;
+    color: var(--active);
+  }
+  
+  .checkbox input + svg .tick {
+    stroke-dasharray: 20;
+    stroke-dashoffset: var(--stroke-dashoffset, 20);
+    transition: stroke-dashoffset 0.2s;
+  }
+  
+  .checkbox input + svg .tick.mask {
+    stroke: var(--active-tick);
+  }
+  
+  .checkbox input + svg + svg {
+    width: 11px;
+    height: 11px;
+    fill: none;
+    stroke: var(--active);
+    stroke-width: 1.25;
+    stroke-linecap: round;
+    top: -6px;
+    right: -10px;
+    stroke-dasharray: 4.5px;
+    stroke-dashoffset: 13.5px;
+    pointer-events: none;
+    -webkit-animation: var(--animation, none) 0.2s ease 0.175s;
+    animation: var(--animation, none) 0.2s ease 0.175s;
+  }
+  
+  .checkbox input:checked {
+    --background: var(--active);
+    --border: var(--active);
+  }
+  
+  .checkbox input:checked + svg {
+    --stroke-dashoffset: 0;
+  }
+  
+  .checkbox input:checked + svg + svg {
+    --animation: check95;
+  }
+  
+  .checkbox:hover input:not(:checked) {
+    --border: var(--border-hover);
+  }
+  
+  @keyframes check95 {
+    100% {
+      stroke-dashoffset: 4.5px;
+    }
+  }
+
+
+  @media(max-width: 1061px){
+    body{
+      margin: auto;
+    }
+    .geral{
+      flex-direction: column;
+      width: 92%;
+    }
+    .image{
+      width: 100%;
+      height: 18vh;
+    }
+    .image h1{
+      padding: 32px 0px 8px 0px;
+      letter-spacing: 0;
+      font-size: 2.45em;
+      text-align: center;
+    }
+    .image h2{
+      font-size: 1.5em;
+      padding: 0px;
+      text-align: center;
+    }
+    .image p{
+      display: none;
+
+    }
+    .form{
+      width: 100%;
+      height: 55vh;
+    }
+    .form h1{
+      margin: 50px;
+      font-size: 1.7em;
+    }
+    .div-geral{
+      width: 80%;
+    }
+    }
+
+    /*NOTEBOOK (maior)*/
+    @media only screen and (max-width: 1366px) and (max-height: 768px) {
+
+     form h1{
+      margin: 100px 0px 80px 0px;
+      font-size: 2.3em;
+     }
+     .div-geral{
+      margin-bottom: 25px;
+     }
+     .submit{
+      margin-top: 60px;
+     }
+    }
+
+
+    @media only screen and (max-width: 1024px) and (max-height: 600px) {
+     
+     }
+
+
+  /*ANIMAÇÕES E JS*/
+
+.senha-fraca{
+  color: red;
+
+}
+.senha-forte{
+  color: green;
+
+}
+.senha-rasoavel{
+  color: orange;
+}
+#paragrafo{
+  font-size: .9em;
+  font-weight: 300;
+  padding-top: 6px;
+  margin: 0;
+}
+
+

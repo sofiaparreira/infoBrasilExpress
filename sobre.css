@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+:root{
+     --azul:#3c67a7;
+
+}
+*{
+    box-sizing: border-box;
+    margin: auto;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    background-color: #f8f6f0;
+}
+.fundo{
+    width: 100%;
+    height: 50vh;
+    background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url(midia/fundo2.png);
+    
+}
+
+/*GERAL*/
+#page {
+  border-bottom: 1px solid;
+}
+
+.title{
+    color: black;
+    font-size: 2rem;
+    font-family: 'Krona One', sans-serif;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-weight: 400;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 1rem;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    color: var(--azul);
+    position: absolute;
+    background-color: white;
+    border-radius: 8px;
+    min-width: 280px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0;
+  }
+  .dropdown p{
+    text-align: center;
+    padding: 18px 0px;
+    font-size: 1.1rem;
+  }
+  
+  .dropdown-content a {
+    padding: 10px 16px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+    margin: 0px 20px 10px 20px;
+  }
+  .azul{
+    color: white;
+    background-color: var(--azul);
+  }
+  .branco{
+    color: var(--azul);
+    border: 2px solid var(--azul);
+  }
+  
+  .dropdown-content .azul:hover {background-color: #315488d7;}
+  .dropdown-content .branco:hover {
+    background-color: #f8f6f0;
+     border: 2px solid #315488d7;
+    color: #315488d7;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+
+/*HEADER*/
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav {
+  display: grid;
+  padding: 0px 1%;
+  grid-template-columns: 15% 50%;
+  column-gap: 34%;
+  background: rgba(0, 0, 0, 0.116);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+
+}
+
+.div-logo {
+  width: 100%;
+}
+.div-logo>img{
+  width: 100%;
+}
+
+nav li {
+  list-style: none;
+  color: white;
+  padding: 0px;
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.textnav{
+  width: 100%;
+}
+.textnav >ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+
+}
+
+/*Main*/
+.banner{
+    padding: 64px;
+
+}
+.banner h1{
+    font-family: 'Krona One', sans-serif;
+    color: white;
+    font-size: 2.8rem;
+    letter-spacing: 3px ;
+    padding-top: 6%;
+}
+.quem-somos{
+    display: flex;
+    flex-direction: row;
+    padding: 100px 0;
+    width: 80%;
+    margin: auto;
+    gap: 5%;
+}
+.quem-somos img{
+    width: 35%;
+}
+.titulo-quem-somos{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.titulo-quem-somos hr{
+    margin: 0;
+    overflow: visible;
+    width: 6%;
+    background-color: var(--azul);
+    height: 3px;
+}
+.titulo-quem-somos h1{
+    margin: 0;
+    color: var(--azul);
+    font-family: 'Krona One', sans-serif;
+    
+}
+.quem-somos p{
+    padding-top: 40px;
+    width: 90%;
+    margin: 0;
+    font-weight: 300;
+    
+}
+
+.quem-somos > div{
+    margin: 0;
+}
+.missao{
+    display: grid;
+    grid-template-columns: repeat(3, 28%);
+    justify-content: center;
+    height: 60%;
+    column-gap: 1%;
+    padding-bottom: 50px;
+}
+.altura-missao{
+    height: 10vh;
+    margin-top: 20px;
+}
+.missao h1{
+    text-align: center;
+    color: var(--azul);
+    font-family: 'Krona One', sans-serif;
+    margin: 0;
+
+
+}
+.missao p {
+    text-align: center;
+    font-weight: 300;
+    line-height: 22px;
+    padding-bottom: 50px;
+}
+
+/*Rodapé*/
+footer{
+    
+    background: #2D4972;
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+.div-logo-footer{
+  display: block;
+}
+footer img{
+  width: 90%;
+}
+footer h1{
+    color: white;
+    font-weight: 300;
+    padding-bottom: 30px;
+}
+footer p{
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu-footer{
+    display: flex;
+    flex-direction: column;
+}
+.menu-footer li{
+    list-style: none;
+    padding: 5px 0;
+}
+footer svg{
+    margin-right: 40px;    
+}
+
+#menu-mobile{
+    display: none;
+  }
+.logo-note{
+    display: none;
+}
+#titulo{
+  display: block;
+}
+
+
+/*MEDIA QUERRY*/
+@media (max-width: 1591px){
+  .missao{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+}
+@media (max-width: 1224px) {
+  .div-logo-footer{
+    width: 50%;
+  }
+  .local-contato{
+  width: 50%;
+  }
+}
+
+@media (max-width: 920px){
+  .quem-somos p{
+    min-width: 200px;
+  }
+  .quem-somos img{
+    width: 300px;
+  }
+
+
+}
+
+/*------ MOBILE ------ */
+@media (max-width: 700px){
+
+  nav{
+    display: none;
+  }
+  #menu-mobile{
+    display: block;
+  }
+  #menu-mobile img{
+    width: 50%;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a.icon {
+
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 8px;
+  }
+
+  .active {
+    background: rgba(0, 0, 0, 0.116);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    backdrop-filter: blur(8px);
+    box-shadow: none;
+    border: none;
+    color: white;
+  }
+
+  .banner{
+    padding: 48px 20px;
+  }
+  .fundo{
+    height: 32vh;
+  }
+
+  .quem-somos{
+    text-align: justify;
+    padding: 55px 0px 65px 0px;
+  }
+  .quem-somos hr{
+    border: none;
+    box-shadow: none;
+    width: 10%;
+  }
+  .quem-somos p{
+    width: 100%;
+    text-align: justify;
+    line-height: 21.5px;
+  }
+  .quem-somos img{
+    display: none;
+  }
+  .missao p{
+    text-align: justify;
+    padding-bottom: 55px;
+  }
+  .missao h1{
+    font-size: 1.3em;
+  }
+  .altura-missao{
+    height: 10%;
+}
+}
+
+
+@media (max-width: 485px){
+  .banner h1{
+    font-size: 2rem;
+  }
+  .depoimento{
+    height: 90vh
+  }
+}
+
+/*------ ANIMAÇÕES E OUTROS ------*/
+nav li:hover {
+  transform: scale(1.07);
+}
+nav li{
+  transition: 0.4s;
+}

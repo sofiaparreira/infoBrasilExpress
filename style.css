@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+:root {
+  --azul: #3c67a7;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: auto;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+  background-color: #f8f6f0;
+  font-size: 1rem;
+  height: 100%;
+}
+
+.fundo {
+  width: 100%;
+  height: 100%;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(midia/fundo.png);
+}
+
+
+/*--- GERAL ---*/
+
+#page{
+  border-bottom: 1px solid ;
+}
+.title {
+  color: black;
+  font-size: 2rem;
+  font-family: 'Krona One', sans-serif;
+  text-align: center;
+  padding-top: 8%;
+  padding-bottom: 6%;
+  font-weight: 400;
+}
+
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 1rem;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  color: var(--azul);
+  position: absolute;
+  background-color: white;
+  border-radius: 8px;
+  min-width: 280px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+}
+
+.dropdown p {
+  text-align: center;
+  padding: 18px 0px;
+  font-size: 1.1rem;
+}
+
+.dropdown-content a {
+  padding: 10px 16px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  border-radius: 5px;
+  margin: 0px 20px 10px 20px;
+}
+
+.azul {
+  color: white;
+  background-color: var(--azul);
+}
+
+.branco {
+  color: var(--azul);
+  border: 2px solid var(--azul);
+}
+
+.dropdown-content .azul:hover {
+  background-color: #315488d7;
+}
+
+.dropdown-content .branco:hover {
+  background-color: #f8f6f0;
+  border: 2px solid #315488d7;
+  color: #315488d7;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*btn banner - saiba mais*/
+
+.black {
+
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.cta {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-top: 5%;
+}
+
+.black span {
+  color: black;
+
+}
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: rgb(255, 255, 255);
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.black .hover-underline-animation:after {
+  background-color: black;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+
+/*--- HEADER ---*/
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav {
+  display: grid;
+  padding: 0px 1%;
+  grid-template-columns: 15% 50%;
+  column-gap: 34%;
+  background: rgba(0, 0, 0, 0.116);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+
+}
+.div-logo {
+  width: 100%;
+}
+.div-logo>img{
+  width: 100%;
+}
+
+nav li {
+  list-style: none;
+  color: white;
+  padding: 0px;
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.textnav{
+  width: 100%;
+}
+.textnav >ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+}
+
+
+
+/*MAIN banner*/
+.banner {
+  padding: 64px;
+}
+
+.banner h1 {
+  font-family: 'Krona One', sans-serif;
+  color: white;
+  font-size: 3.8rem;
+  font-weight: 400;
+  padding-top: 8%;
+}
+
+.banner h2 {
+  font-family: 'Krona One', sans-serif;
+  color: white;
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+
+.banner p {
+  color: white;
+  font-size: 1rem;
+  font-weight: 200;
+  letter-spacing: 2px;
+  min-width: 30px;
+  max-width: 800px;
+  margin: 2% 0 0px 0px;
+  padding-bottom: 2%;
+}
+
+
+/*MAIN sobre nós*/
+
+.sobre {
+  height: 50%;
+}
+
+.sobre p {
+  font-weight: 200;
+  text-align: center;
+  font-weight: 300;
+  line-height: 21.5px;
+  width: 60%;
+}
+
+
+/*MAIN Depoimentos*/
+.depoimento {
+  height: 70vh;
+
+}
+
+.depoimento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 28%);
+  gap: 2%;
+  justify-content: center;
+
+  padding-top: 80px;
+
+}
+
+.depoimento-grid p {
+  text-align: center;
+  font-weight: 300;
+}
+
+.depoimento-grid h2 {
+  font-size: 1.3rem;
+  text-align: center;
+  padding-top: 25px;
+  font-weight: 400;
+}
+
+.depoimento-grid img {
+  float: left;
+  padding-right: 20px;
+}
+
+/*MAIN localização*/
+.localizacao {
+  position: relative;
+  height: 100%;
+}
+.textmap{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: white;
+  left: 50%;
+  top: 50%;
+  
+}
+.textmap>p{
+  text-align: center;
+  line-height: 30px;
+  font-weight: 300;
+}
+.loc{
+  color: white;
+}
+
+.mapa {
+  width: 100%;
+  height: 60vh;
+  filter: brightness(20%);
+}
+
+.dias {
+  display: grid;
+  grid-template-areas: 
+  "d1 d2";
+  gap: 20%;
+  margin-top: 90px;
+}
+.dias p{
+  padding: 10% 0;
+  letter-spacing: .4px;
+  font-weight: 300;
+}
+.strong{
+  font-weight: 400;
+}
+.grid-area-dias1{
+  grid-area: d1;
+}
+.grid-area-dias2{
+  grid-area: d2;
+}
+/*Rodapé*/
+/*Rodapé*/
+footer{
+    
+  background: #2D4972;
+  height: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+.div-logo-footer{
+display: block;
+}
+footer img{
+width: 90%;
+}
+footer h1{
+  color: white;
+  font-weight: 300;
+  padding-bottom: 30px;
+}
+footer p{
+  color: white;
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+}
+
+.menu-footer{
+  display: flex;
+  flex-direction: column;
+}
+.menu-footer li{
+  list-style: none;
+  padding: 5px 0;
+}
+footer svg{
+  margin-right: 40px;    
+}
+
+#menu-mobile{
+  display: none;
+}
+.logo-note{
+  display: none;
+}
+
+
+@media(max-width:938px)
+{
+  .depoimento-grid{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .depoimento-grid img{
+    display: none;
+  }
+  .depoimento-grid h2{
+    padding-bottom: 80px;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 1224px)
+{
+.div-logo-footer{
+  width: 50%;
+}
+.local-contato{
+width: 50%;
+}
+}
+
+
+
+/*----- MOBILE -----*/
+@media (max-width:700px){
+
+  nav{
+    display: none;
+  }
+  #menu-mobile{
+    display: block;
+  }
+  #menu-mobile img{
+    width: 50%;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a.icon {
+
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 8px;
+  }
+
+  .active {
+    background: rgba(0, 0, 0, 0.116);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    backdrop-filter: blur(8px);
+    box-shadow: none;
+    border: none;
+    color: white;
+  }
+  .banner{
+    padding: 48px 20px;
+  }
+
+  .banner h2{
+    font-size: 2.1rem;
+    margin-bottom: 25px;
+  }
+  .sobre{
+    margin-bottom: 20px;
+  }
+  .sobre p{
+    width: 85%;
+    text-align: justify;
+    padding-top: 6px;
+    padding-bottom: 12px;
+  }
+  .depoimento{
+    height: 80%;
+  }
+  .depoimento h2{
+    padding-bottom: 60px;
+  }
+  .localizacao{
+    height: 700px;
+  }
+
+  .mapa{
+    height: 700px;
+  }
+
+}
+
+
+/*----- MOBILE -----*/
+
+@media (max-width: 638px) {
+  .title{
+    padding-top: 20%;
+  }
+  .depoimento-grid {
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .depoimento h1 {
+    padding: 50px 0 78px 0;
+  }
+
+  .depoimento-grid div {
+    min-width: 100%;
+    scroll-snap-align: start;
+
+  }
+
+  .depoimento-grid img {
+    visibility: hidden;
+  }
+
+  .depoimento-grid p {
+    width: 70%;
+  }
+
+  .depoimento-grid h2 {
+    margin-bottom: 5px;
+  }
+
+  .depoimento-grid {
+    padding: 0;
+  }
+  .depoimento{
+    height: 80vh;
+  }
+}
+
+@media (max-width: 485px){
+  .depoimento{
+    height: 90vh
+  }
+}
+/*------ ANIMAÇÕES E OUTROS ------*/
+nav li:hover {
+  transform: scale(1.07);
+}
+nav li{
+  transition: 0.4s;
+}
